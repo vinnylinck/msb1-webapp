@@ -1,0 +1,239 @@
+<html>
+<script type="text/javascript" src="/asl.js"></script>
+
+<head>
+<style>
+			*
+			{
+				font-family: Tahoma;
+				font-weight: bold;
+			}
+			#small_info
+			{
+				height:38px;
+				background-color: #AAABAB;
+				font-size: 1.3em;
+			}
+			div#small_info div.inner
+			{
+				width:50%;
+				border-right: 1px solid black;
+				height: 38px;
+			}
+			div#small_info div.inner_holder
+			{
+				vertical-align: middle;
+				margin:auto;
+			}
+
+			div.box
+			{
+				box-sizing: border-box;
+				display: -webkit-box;
+				-webkit-box-align: center;
+				-webkit-box-pack: center;
+				-webkit-box-flex: 1;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				float:left;
+			}
+
+			#body
+			{
+				margin: 0;
+				padding: 0;
+				border: 0;
+				height: 162px;
+				overflow:hidden;
+			}
+
+			.body
+			{
+				height: 162px;
+				padding: 5px;
+			}
+
+			div.body div
+			{
+				display:block;
+			}
+
+			body
+			{
+				margin: 0;
+				padding: 0;
+				border: 0;
+			}
+
+			div.list_item
+			{
+				border-bottom: 2px dotted #AAABAB;
+				padding: 5px;
+			}
+
+			div.list_item.bottom
+			{
+				border-bottom: 0px;
+			}
+
+			.hidden
+			{
+				display: none !important;
+			}
+
+			#scan_message
+			{
+				font-size:1.5em;
+			}
+
+			#scan_error
+			{
+				position:absolute;
+				bottom: 50px;
+				left:0px;
+				width:100%;
+				height:0px;
+				overflow:visible;
+				margin-left:auto;
+				margin-right:auto;
+				text-align:center;
+			}
+
+			div#scan_error span
+			{
+
+				margin-left: auto;
+				margin-right: auto;
+				background:	#aaabab;
+				padding: 5px;
+				border-radius: 5px;
+			}
+
+			#information
+			{
+				display: -webkit-box;
+				-webkit-box-align: center;
+				-webkit-box-pack: center;
+				-webkit-box-flex: 1;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				height:200px;
+			}
+
+			#image
+			{
+				max-width:150px;
+			}
+		</style>
+
+		<script>
+
+		asl.back(exit);
+					asl.title('Price Check');
+
+
+		var BarcodeData = '';
+			function onLoad()
+			{
+				try{
+					scanner.enable();
+				}
+				catch(e){}
+				scanner.decodeEvent = 'decodeEvent(%json)';
+			}
+
+			window.addEventListener('load', function(){setTimeout(onLoad, 500)}, false);
+
+			function exit()
+			{
+				asl.exit();
+			}
+
+
+
+
+			function decodeEvent(str)
+			{
+
+			if (window.XMLHttpRequest)
+			  {// code for IE7+, Firefox, Chrome, Opera, Safari
+			  	xmlhttp=new XMLHttpRequest();
+			  }
+			else
+			  {// code for IE6, IE5
+				  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			  }
+
+				xmlhttp.onreadystatechange=function()
+			  {
+			  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				{
+					UpdateScreen();
+				}
+			  }
+	xmlhttp.open("POST","getuser.php",true);
+	xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+	xmlhttp.send("q=" + str);
+}
+
+
+function UpdateScreen()
+				{
+					document.getElementById('info1').innerHTML = xmlhttp.responseXML.getElementsByTagName("info1")[0].firstChild.data;
+					document.getElementById('info2').innerHTML = xmlhttp.responseXML.getElementsByTagName("info2")[0].firstChild.data;
+					document.getElementById('image').src = xmlhttp.responseXML.getElementsByTagName("image")[0].firstChild.data;
+					document.getElementById('code').innerHTML = xmlhttp.responseXML.getElementsByTagName("code")[0].firstChild.data;
+					document.getElementById('item').innerHTML = xmlhttp.responseXML.getElementsByTagName("item")[0].firstChild.data;
+					document.getElementById('description').innerHTML = xmlhttp.responseXML.getElementsByTagName("description")[0].firstChild.data;
+					document.getElementById('priceLookup').className = '';
+					document.getElementById('information').className = 'hidden';
+					setTimeout(function(){document.getElementById('details').style.maxWidth = 320 - document.getElementById('image_div').clientWidth;},300);
+					asl.back(function()
+					{
+						document.getElementById('priceLookup').className = 'hidden';
+						document.getElementById('information').className = '';
+
+						asl.back(exit);
+					});
+				}
+	function ShowError()
+				{
+					document.getElementById('scan_error').className = '';
+					setTimeout(function()
+					{
+						document.getElementById('scan_error').className = 'hidden';
+					}, 1000);
+				}
+
+
+
+</script>
+</head>
+<body>
+		<section id="information">
+			<div id="scan_message">Please scan a barcode</div>
+
+		</section>
+		<div id="scan_error" class="hidden"><span>Unrecognised Barcode</span></div>
+		<section id="priceLookup" class="hidden">
+			<div id="small_info">
+				<div class="inner_holder">
+					<div class="inner box" id="info1"></div>
+					<div class="inner box" id="info2"></div>
+				</div>
+			</div>
+			<div id="body">
+				<div id="image_div" class="body box">
+					<img id="image"></img>
+				</div>
+				<div id="details" class="body box">
+					<div>
+						<div class="list_item"><span id="code"></span></div>
+						<div class="list_item">Item: <span id="item"></span></div>
+						<div class="list_item bottom">Description: <span id="description"></span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

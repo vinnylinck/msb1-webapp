@@ -1,0 +1,24 @@
+[2013-11-10 18:17:53,644][INFO ][cluster.metadata         ] [Kirigi] [smartbadge] creating index, cause [auto(bulk api)], shards [5]/[1], mappings []
+[2013-11-10 18:18:00,945][INFO ][cluster.metadata         ] [Kirigi] [smartbadge] update_mapping [items] (dynamic)
+[2013-11-10 18:18:07,909][INFO ][node                     ] [Kirigi] stopping ...
+[2013-11-10 18:18:07,973][INFO ][node                     ] [Kirigi] stopped
+[2013-11-10 18:18:07,974][INFO ][node                     ] [Kirigi] closing ...
+[2013-11-10 18:18:07,989][INFO ][node                     ] [Kirigi] closed
+[2013-11-10 18:18:14,055][INFO ][node                     ] [Starsmore, Jonothon] version[0.90.6], pid[894], build[e2a24ef/2013-11-04T13:44:16Z]
+[2013-11-10 18:18:14,055][INFO ][node                     ] [Starsmore, Jonothon] initializing ...
+[2013-11-10 18:18:14,065][INFO ][plugins                  ] [Starsmore, Jonothon] loaded [], sites []
+[2013-11-10 18:18:17,022][INFO ][node                     ] [Starsmore, Jonothon] initialized
+[2013-11-10 18:18:17,022][INFO ][node                     ] [Starsmore, Jonothon] starting ...
+[2013-11-10 18:18:17,162][INFO ][transport                ] [Starsmore, Jonothon] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.2.4:9300]}
+[2013-11-10 18:18:20,254][INFO ][cluster.service          ] [Starsmore, Jonothon] new_master [Starsmore, Jonothon][YLmrWGCrSZO2Nh8q26gGMA][inet[/192.168.2.4:9300]], reason: zen-disco-join (elected_as_master)
+[2013-11-10 18:18:20,297][INFO ][discovery                ] [Starsmore, Jonothon] elasticsearch/YLmrWGCrSZO2Nh8q26gGMA
+[2013-11-10 18:18:20,313][INFO ][http                     ] [Starsmore, Jonothon] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.2.4:9200]}
+[2013-11-10 18:18:20,315][INFO ][node                     ] [Starsmore, Jonothon] started
+[2013-11-10 18:18:21,062][INFO ][gateway                  ] [Starsmore, Jonothon] recovered [1] indices into cluster_state
+[2013-11-10 18:18:21,874][INFO ][cluster.metadata         ] [Starsmore, Jonothon] [smartbadge] deleting index
+[2013-11-10 18:18:40,548][INFO ][cluster.metadata         ] [Starsmore, Jonothon] [smartbadge] creating index, cause [auto(bulk api)], shards [5]/[1], mappings []
+[2013-11-10 18:18:57,605][INFO ][cluster.metadata         ] [Starsmore, Jonothon] [smartbadge] update_mapping [items] (dynamic)
+[2013-11-10 19:19:32,384][INFO ][node                     ] [Starsmore, Jonothon] stopping ...
+[2013-11-10 19:19:32,496][INFO ][node                     ] [Starsmore, Jonothon] stopped
+[2013-11-10 19:19:32,496][INFO ][node                     ] [Starsmore, Jonothon] closing ...
+[2013-11-10 19:19:32,510][INFO ][node                     ] [Starsmore, Jonothon] closed

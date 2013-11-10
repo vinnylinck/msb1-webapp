@@ -1,0 +1,124 @@
+[2013-11-09 11:22:32,082][INFO ][node                     ] [Norns] version[0.90.6], pid[7116], build[e2a24ef/2013-11-04T13:44:16Z]
+[2013-11-09 11:22:32,083][INFO ][node                     ] [Norns] initializing ...
+[2013-11-09 11:22:32,092][INFO ][plugins                  ] [Norns] loaded [], sites []
+[2013-11-09 11:22:34,702][INFO ][node                     ] [Norns] initialized
+[2013-11-09 11:22:34,702][INFO ][node                     ] [Norns] starting ...
+[2013-11-09 11:22:34,842][INFO ][transport                ] [Norns] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.2.6:9300]}
+[2013-11-09 11:22:37,930][INFO ][cluster.service          ] [Norns] new_master [Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]], reason: zen-disco-join (elected_as_master)
+[2013-11-09 11:22:37,987][INFO ][discovery                ] [Norns] elasticsearch/OKmOz3DeRduDm_L32nXtJg
+[2013-11-09 11:22:38,006][INFO ][http                     ] [Norns] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.2.6:9200]}
+[2013-11-09 11:22:38,007][INFO ][node                     ] [Norns] started
+[2013-11-09 11:22:38,039][INFO ][gateway                  ] [Norns] recovered [0] indices into cluster_state
+[2013-11-09 11:22:38,555][INFO ][node                     ] [Scanner] version[0.90.6], pid[7129], build[e2a24ef/2013-11-04T13:44:16Z]
+[2013-11-09 11:22:38,555][INFO ][node                     ] [Scanner] initializing ...
+[2013-11-09 11:22:38,564][INFO ][plugins                  ] [Scanner] loaded [], sites []
+[2013-11-09 11:22:41,013][INFO ][node                     ] [Scanner] initialized
+[2013-11-09 11:22:41,014][INFO ][node                     ] [Scanner] starting ...
+[2013-11-09 11:22:41,137][INFO ][transport                ] [Scanner] bound_address {inet[/0:0:0:0:0:0:0:0%0:9301]}, publish_address {inet[/192.168.2.6:9301]}
+[2013-11-09 11:22:42,008][INFO ][node                     ] [Rasputin, Illyana] version[0.90.6], pid[7131], build[e2a24ef/2013-11-04T13:44:16Z]
+[2013-11-09 11:22:42,009][INFO ][node                     ] [Rasputin, Illyana] initializing ...
+[2013-11-09 11:22:42,017][INFO ][plugins                  ] [Rasputin, Illyana] loaded [], sites []
+[2013-11-09 11:22:44,248][INFO ][cluster.service          ] [Norns] added {[Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]],}, reason: zen-disco-receive(join from node[[Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]]])
+[2013-11-09 11:22:44,267][INFO ][cluster.service          ] [Scanner] detected_master [Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]], added {[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]],}, reason: zen-disco-receive(from master [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]])
+[2013-11-09 11:22:44,302][INFO ][discovery                ] [Scanner] elasticsearch/LMd3pqslSuGGqfyh3HPc_Q
+[2013-11-09 11:22:44,307][INFO ][http                     ] [Scanner] bound_address {inet[/0:0:0:0:0:0:0:0%0:9201]}, publish_address {inet[/192.168.2.6:9201]}
+[2013-11-09 11:22:44,308][INFO ][node                     ] [Scanner] started
+[2013-11-09 11:22:44,508][INFO ][node                     ] [Rasputin, Illyana] initialized
+[2013-11-09 11:22:44,509][INFO ][node                     ] [Rasputin, Illyana] starting ...
+[2013-11-09 11:22:44,630][INFO ][transport                ] [Rasputin, Illyana] bound_address {inet[/0:0:0:0:0:0:0:0%0:9302]}, publish_address {inet[/192.168.2.6:9302]}
+[2013-11-09 11:22:47,735][INFO ][cluster.service          ] [Norns] added {[Rasputin, Illyana][cwCFV-rNRKe7sSeEe9inQQ][inet[/192.168.2.6:9302]],}, reason: zen-disco-receive(join from node[[Rasputin, Illyana][cwCFV-rNRKe7sSeEe9inQQ][inet[/192.168.2.6:9302]]])
+[2013-11-09 11:22:47,737][INFO ][cluster.service          ] [Scanner] added {[Rasputin, Illyana][cwCFV-rNRKe7sSeEe9inQQ][inet[/192.168.2.6:9302]],}, reason: zen-disco-receive(from master [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]])
+[2013-11-09 11:22:47,747][INFO ][cluster.service          ] [Rasputin, Illyana] detected_master [Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]], added {[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]],[Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]],}, reason: zen-disco-receive(from master [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]])
+[2013-11-09 11:22:47,786][INFO ][discovery                ] [Rasputin, Illyana] elasticsearch/cwCFV-rNRKe7sSeEe9inQQ
+[2013-11-09 11:22:47,792][INFO ][http                     ] [Rasputin, Illyana] bound_address {inet[/0:0:0:0:0:0:0:0%0:9202]}, publish_address {inet[/192.168.2.6:9202]}
+[2013-11-09 11:22:47,793][INFO ][node                     ] [Rasputin, Illyana] started
+[2013-11-09 11:22:59,658][INFO ][node                     ] [Rasputin, Illyana] stopping ...
+[2013-11-09 11:22:59,666][INFO ][cluster.service          ] [Norns] removed {[Rasputin, Illyana][cwCFV-rNRKe7sSeEe9inQQ][inet[/192.168.2.6:9302]],}, reason: zen-disco-node_left([Rasputin, Illyana][cwCFV-rNRKe7sSeEe9inQQ][inet[/192.168.2.6:9302]])
+[2013-11-09 11:22:59,667][INFO ][cluster.service          ] [Scanner] removed {[Rasputin, Illyana][cwCFV-rNRKe7sSeEe9inQQ][inet[/192.168.2.6:9302]],}, reason: zen-disco-receive(from master [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]])
+[2013-11-09 11:22:59,696][INFO ][node                     ] [Rasputin, Illyana] stopped
+[2013-11-09 11:22:59,696][INFO ][node                     ] [Rasputin, Illyana] closing ...
+[2013-11-09 11:22:59,703][INFO ][node                     ] [Rasputin, Illyana] closed
+[2013-11-09 11:23:55,661][INFO ][node                     ] [Doctor Glitternight] version[0.90.6], pid[7153], build[e2a24ef/2013-11-04T13:44:16Z]
+[2013-11-09 11:23:55,662][INFO ][node                     ] [Doctor Glitternight] initializing ...
+[2013-11-09 11:23:55,671][INFO ][plugins                  ] [Doctor Glitternight] loaded [], sites []
+[2013-11-09 11:23:58,166][INFO ][node                     ] [Doctor Glitternight] initialized
+[2013-11-09 11:23:58,166][INFO ][node                     ] [Doctor Glitternight] starting ...
+[2013-11-09 11:23:58,313][INFO ][transport                ] [Doctor Glitternight] bound_address {inet[/0:0:0:0:0:0:0:0%0:9302]}, publish_address {inet[/192.168.2.6:9302]}
+[2013-11-09 11:23:58,534][INFO ][node                     ] [Gambit] version[0.90.6], pid[7161], build[e2a24ef/2013-11-04T13:44:16Z]
+[2013-11-09 11:23:58,534][INFO ][node                     ] [Gambit] initializing ...
+[2013-11-09 11:23:58,541][INFO ][plugins                  ] [Gambit] loaded [], sites []
+[2013-11-09 11:24:00,762][INFO ][node                     ] [Gambit] initialized
+[2013-11-09 11:24:00,763][INFO ][node                     ] [Gambit] starting ...
+[2013-11-09 11:24:00,872][INFO ][transport                ] [Gambit] bound_address {inet[/0:0:0:0:0:0:0:0%0:9303]}, publish_address {inet[/192.168.2.6:9303]}
+[2013-11-09 11:24:01,416][INFO ][cluster.service          ] [Norns] added {[Doctor Glitternight][MX5uejhNTwC35jhmkMidPA][inet[/192.168.2.6:9302]],}, reason: zen-disco-receive(join from node[[Doctor Glitternight][MX5uejhNTwC35jhmkMidPA][inet[/192.168.2.6:9302]]])
+[2013-11-09 11:24:01,418][INFO ][cluster.service          ] [Scanner] added {[Doctor Glitternight][MX5uejhNTwC35jhmkMidPA][inet[/192.168.2.6:9302]],}, reason: zen-disco-receive(from master [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]])
+[2013-11-09 11:24:01,428][INFO ][cluster.service          ] [Doctor Glitternight] detected_master [Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]], added {[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]],[Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]],}, reason: zen-disco-receive(from master [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]])
+[2013-11-09 11:24:01,448][INFO ][discovery                ] [Doctor Glitternight] elasticsearch/MX5uejhNTwC35jhmkMidPA
+[2013-11-09 11:24:01,454][INFO ][http                     ] [Doctor Glitternight] bound_address {inet[/0:0:0:0:0:0:0:0%0:9202]}, publish_address {inet[/192.168.2.6:9202]}
+[2013-11-09 11:24:01,454][INFO ][node                     ] [Doctor Glitternight] started
+[2013-11-09 11:24:03,977][INFO ][cluster.service          ] [Norns] added {[Gambit][iFLD1tnIR_CJjB42b_mxnQ][inet[/192.168.2.6:9303]],}, reason: zen-disco-receive(join from node[[Gambit][iFLD1tnIR_CJjB42b_mxnQ][inet[/192.168.2.6:9303]]])
+[2013-11-09 11:24:03,980][INFO ][cluster.service          ] [Scanner] added {[Gambit][iFLD1tnIR_CJjB42b_mxnQ][inet[/192.168.2.6:9303]],}, reason: zen-disco-receive(from master [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]])
+[2013-11-09 11:24:03,980][INFO ][cluster.service          ] [Doctor Glitternight] added {[Gambit][iFLD1tnIR_CJjB42b_mxnQ][inet[/192.168.2.6:9303]],}, reason: zen-disco-receive(from master [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]])
+[2013-11-09 11:24:03,990][INFO ][cluster.service          ] [Gambit] detected_master [Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]], added {[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]],[Doctor Glitternight][MX5uejhNTwC35jhmkMidPA][inet[/192.168.2.6:9302]],[Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]],}, reason: zen-disco-receive(from master [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]])
+[2013-11-09 11:24:04,027][INFO ][discovery                ] [Gambit] elasticsearch/iFLD1tnIR_CJjB42b_mxnQ
+[2013-11-09 11:24:04,032][INFO ][http                     ] [Gambit] bound_address {inet[/0:0:0:0:0:0:0:0%0:9203]}, publish_address {inet[/192.168.2.6:9203]}
+[2013-11-09 11:24:04,033][INFO ][node                     ] [Gambit] started
+[2013-11-09 11:27:05,000][INFO ][node                     ] [Norns] stopping ...
+[2013-11-09 11:27:05,013][INFO ][discovery.zen            ] [Scanner] master_left [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]], reason [shut_down]
+[2013-11-09 11:27:05,013][INFO ][discovery.zen            ] [Gambit] master_left [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]], reason [shut_down]
+[2013-11-09 11:27:05,013][INFO ][discovery.zen            ] [Doctor Glitternight] master_left [[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]], reason [shut_down]
+[2013-11-09 11:27:05,016][INFO ][cluster.service          ] [Gambit] master {new [Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]], previous [Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]}, removed {[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]],}, reason: zen-disco-master_failed ([Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]])
+[2013-11-09 11:27:05,018][INFO ][cluster.service          ] [Scanner] master {new [Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]], previous [Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]}, removed {[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]],}, reason: zen-disco-master_failed ([Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]])
+[2013-11-09 11:27:05,020][INFO ][cluster.service          ] [Doctor Glitternight] master {new [Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]], previous [Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]]}, removed {[Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]],}, reason: zen-disco-master_failed ([Norns][OKmOz3DeRduDm_L32nXtJg][inet[/192.168.2.6:9300]])
+[2013-11-09 11:27:05,045][INFO ][node                     ] [Norns] stopped
+[2013-11-09 11:27:05,045][INFO ][node                     ] [Norns] closing ...
+[2013-11-09 11:27:05,050][INFO ][node                     ] [Norns] closed
+[2013-11-09 11:27:26,482][INFO ][discovery.zen            ] [Gambit] master_left [[Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]]], reason [transport disconnected (with verified connect)]
+[2013-11-09 11:27:26,483][INFO ][cluster.service          ] [Gambit] master {new [Doctor Glitternight][MX5uejhNTwC35jhmkMidPA][inet[/192.168.2.6:9302]], previous [Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]]}, removed {[Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]],}, reason: zen-disco-master_failed ([Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]])
+[2013-11-09 11:27:26,484][INFO ][discovery.zen            ] [Doctor Glitternight] master_left [[Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]]], reason [transport disconnected (with verified connect)]
+[2013-11-09 11:27:26,485][INFO ][cluster.service          ] [Doctor Glitternight] master {new [Doctor Glitternight][MX5uejhNTwC35jhmkMidPA][inet[/192.168.2.6:9302]], previous [Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]]}, removed {[Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]],}, reason: zen-disco-master_failed ([Scanner][LMd3pqslSuGGqfyh3HPc_Q][inet[/192.168.2.6:9301]])
+[2013-11-09 11:27:46,695][INFO ][cluster.service          ] [Doctor Glitternight] removed {[Gambit][iFLD1tnIR_CJjB42b_mxnQ][inet[/192.168.2.6:9303]],}, reason: zen-disco-node_failed([Gambit][iFLD1tnIR_CJjB42b_mxnQ][inet[/192.168.2.6:9303]]), reason transport disconnected (with verified connect)
+[2013-11-09 11:28:28,266][INFO ][node                     ] [Nate Grey] version[0.90.6], pid[7191], build[e2a24ef/2013-11-04T13:44:16Z]
+[2013-11-09 11:28:28,267][INFO ][node                     ] [Nate Grey] initializing ...
+[2013-11-09 11:28:28,275][INFO ][plugins                  ] [Nate Grey] loaded [], sites []
+[2013-11-09 11:28:30,496][INFO ][node                     ] [Nate Grey] initialized
+[2013-11-09 11:28:30,496][INFO ][node                     ] [Nate Grey] starting ...
+[2013-11-09 11:28:30,601][INFO ][transport                ] [Nate Grey] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.2.6:9300]}
+[2013-11-09 11:28:33,671][INFO ][cluster.service          ] [Nate Grey] new_master [Nate Grey][Gz0XPQFBTDOueXYs5yFz1Q][inet[/192.168.2.6:9300]], reason: zen-disco-join (elected_as_master)
+[2013-11-09 11:28:33,715][INFO ][discovery                ] [Nate Grey] elasticsearch/Gz0XPQFBTDOueXYs5yFz1Q
+[2013-11-09 11:28:33,731][INFO ][http                     ] [Nate Grey] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.2.6:9200]}
+[2013-11-09 11:28:33,732][INFO ][node                     ] [Nate Grey] started
+[2013-11-09 11:28:33,746][INFO ][gateway                  ] [Nate Grey] recovered [0] indices into cluster_state
+[2013-11-09 12:41:39,900][INFO ][node                     ] [Nate Grey] stopping ...
+[2013-11-09 12:41:40,089][INFO ][node                     ] [Nate Grey] stopped
+[2013-11-09 12:41:40,090][INFO ][node                     ] [Nate Grey] closing ...
+[2013-11-09 12:41:40,143][INFO ][node                     ] [Nate Grey] closed
+[2013-11-09 19:48:07,029][INFO ][node                     ] [Blade] version[0.90.6], pid[7841], build[e2a24ef/2013-11-04T13:44:16Z]
+[2013-11-09 19:48:07,030][INFO ][node                     ] [Blade] initializing ...
+[2013-11-09 19:48:07,043][INFO ][plugins                  ] [Blade] loaded [], sites []
+[2013-11-09 19:48:10,872][INFO ][node                     ] [Blade] initialized
+[2013-11-09 19:48:10,873][INFO ][node                     ] [Blade] starting ...
+[2013-11-09 19:48:11,070][INFO ][transport                ] [Blade] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.2.6:9300]}
+[2013-11-09 19:48:14,185][INFO ][cluster.service          ] [Blade] new_master [Blade][BufGH1MrTPC8r_FHs9JMGw][inet[/192.168.2.6:9300]], reason: zen-disco-join (elected_as_master)
+[2013-11-09 19:48:14,239][INFO ][discovery                ] [Blade] elasticsearch/BufGH1MrTPC8r_FHs9JMGw
+[2013-11-09 19:48:14,262][INFO ][http                     ] [Blade] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.2.6:9200]}
+[2013-11-09 19:48:14,277][INFO ][node                     ] [Blade] started
+[2013-11-09 19:48:14,295][INFO ][gateway                  ] [Blade] recovered [0] indices into cluster_state
+[2013-11-09 20:35:54,273][INFO ][node                     ] [Blade] stopping ...
+[2013-11-09 20:35:54,318][INFO ][node                     ] [Blade] stopped
+[2013-11-09 20:35:54,318][INFO ][node                     ] [Blade] closing ...
+[2013-11-09 20:35:54,330][INFO ][node                     ] [Blade] closed
+[2013-11-09 20:48:26,820][INFO ][node                     ] [Kirigi] version[0.90.6], pid[682], build[e2a24ef/2013-11-04T13:44:16Z]
+[2013-11-09 20:48:26,821][INFO ][node                     ] [Kirigi] initializing ...
+[2013-11-09 20:48:26,831][INFO ][plugins                  ] [Kirigi] loaded [], sites []
+[2013-11-09 20:48:29,790][INFO ][node                     ] [Kirigi] initialized
+[2013-11-09 20:48:29,790][INFO ][node                     ] [Kirigi] starting ...
+[2013-11-09 20:48:29,936][INFO ][transport                ] [Kirigi] bound_address {inet[/0:0:0:0:0:0:0:0%0:9300]}, publish_address {inet[/192.168.2.6:9300]}
+[2013-11-09 20:48:33,028][INFO ][cluster.service          ] [Kirigi] new_master [Kirigi][MfMaCeUhRXy8TJIjzZkQ0A][inet[/192.168.2.6:9300]], reason: zen-disco-join (elected_as_master)
+[2013-11-09 20:48:33,072][INFO ][discovery                ] [Kirigi] elasticsearch/MfMaCeUhRXy8TJIjzZkQ0A
+[2013-11-09 20:48:33,089][INFO ][http                     ] [Kirigi] bound_address {inet[/0:0:0:0:0:0:0:0%0:9200]}, publish_address {inet[/192.168.2.6:9200]}
+[2013-11-09 20:48:33,090][INFO ][node                     ] [Kirigi] started
+[2013-11-09 20:48:33,107][INFO ][gateway                  ] [Kirigi] recovered [0] indices into cluster_state
+[2013-11-09 20:51:39,716][INFO ][cluster.metadata         ] [Kirigi] [smartbadge] creating index, cause [auto(bulk api)], shards [5]/[1], mappings []
+[2013-11-09 20:51:49,526][INFO ][cluster.metadata         ] [Kirigi] [smartbadge] update_mapping [items] (dynamic)
+[2013-11-09 20:55:25,275][INFO ][cluster.metadata         ] [Kirigi] [smartbadge] deleting index

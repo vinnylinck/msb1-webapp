@@ -1,0 +1,22 @@
+{
+  "name": "msb1-webapp",
+  "version": "0.1.0",
+  "homepage": "https://github.com/vinnylinck/msb1-webapp",
+  "authors": [
+    "Vinicius Linck <vinnylinck@gmail.com>"
+  ],
+  "description": "Motorola Smart Badge 1 Webapp sample.",
+  "main": "src/index.html",
+  "keywords": [
+    "Motorola"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
